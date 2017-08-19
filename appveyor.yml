@@ -168,7 +168,7 @@ deploy:
   provider: GitHub
   release: $(appveyor_repo_tag_name)
   auth_token:
-    secure: "dbpsMC/MgPKWFNJCXpQl4cR8FYhepkPLjgNp/pRMktZ8oLKTqPYErfreaIxb/4P1"
+    secure: "o6tQ+zZGooN39O+R1kq9D9yZXlXi8Nao89G5OE++kbEbZyOStGI//SGLCabP7Txb"
   artifact: update,build
   draft: false
   prerelease: false
