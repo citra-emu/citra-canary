@@ -1,0 +1,37 @@
+resources:
+  containers:
+    - container: linux_flatpak
+      image: "citraemu/build-environments:linux-flatpak"
+      options: --privileged
+
+jobs:
+# LinuxFlatPak build
+- job: LinuxFlatPak
+
+  pool:
+    vmImage: 'ubuntu-16.04'
+  container: linux_flatpak
+  steps:
+  - bash: /bin/bash -ex ./.travis/linux-flatpak/generate-data.sh
+    # set secret variables in the control panel and fill in the following
+    # env:
+    #   TRANSIFEX_API_TOKEN: $(tx_token)
+    displayName: 'Generate Flatpak metadata'
+  - bash: |
+      REPO_NAME=$(echo $BUILD_REPOSITORY_NAME | cut -d'/' -f 2)
+      CITRA_SRC_DIR="$(pwd)"
+      REPO_DIR="$CITRA_SRC_DIR/repo"
+      BUILD_DIR="$CITRA_SRC_DIR/build"
+      STATE_DIR="$CITRA_SRC_DIR/.flatpak-builder"
+      flatpak-builder --jobs=4 --ccache --force-clean --state-dir="$STATE_DIR" --repo="$REPO_DIR" "$BUILD_DIR" "/tmp/org.citra.$REPO_NAME.json"
+    displayName: 'Build Citra Flatpak'
+    # Azure pipeline's condition expression is very wired
+    # the following means:
+    # Build.SourceBranch == 'refs/heads/master' && Build.Repository.Uri == 'citra-emu/citra' && PUSH EVENT (IndividualCI)
+    # also, 'Build.Repository.Name' is not available prior to the 'steps' section
+    # condition: |
+    #   and(
+    #     eq(variables['Build.Repository.Name'], 'citra-emu/citra'),
+    #     in(variables['Build.Reason'], 'IndividualCI', 'BatchedCI')
+    #   )
+
