@@ -897,6 +897,11 @@ Would you like to ignore the error and continue?</source>
         <translation>图形</translation>
     </message>
     <message>
+        <location filename="../../src/citra_qt/configuration/configure_dialog.cpp" line="132"/>
+        <source>Advanced</source>
+        <translation>高级</translation>
+    </message>
+    <message>
         <location filename="../../src/citra_qt/configuration/configure.ui" line="53"/>
         <location filename="../../src/citra_qt/configuration/configure_dialog.cpp" line="127"/>
         <source>Audio</source>
@@ -5273,6 +5278,118 @@ They may have left the room.</source>
         <location filename="../../src/citra_qt/debugger/wait_tree.cpp" line="403"/>
         <source>Wait Tree</source>
         <translation>等待树</translation>
+    </message>
+</context>
+<context>    
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure.ui" line="53"/>
+        <source>Enhancements</source>
+        <translation>增加功能</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="26"/>
+        <source>Renderer</source>
+        <translation>渲染</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="34"/>
+        <source>Internal Resolution</source>
+        <translation>内部分辨率</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="102"/>
+        <source>Enable Linear Filtering</source>
+        <translation>启用线性筛选</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="111"/>
+        <source>Post-Processing Shader</source>
+        <translation>后期处理着色器</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="126"/>
+        <source>Stereoscopy</source>
+        <translation>立体视觉</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="134"/>
+        <source>Stereoscopic 3D Mode</source>
+        <translation>立体3D模式</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="147"/>
+        <source>Side by Side</source>
+        <translation>并排</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="152"/>
+        <source>Anaglyph</source>
+        <translation>浮雕</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="164"/>
+        <source>Depth</source>
+        <translation>深度</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="192"/>
+        <source>Layout</source>
+        <translation>布局</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="200"/>
+        <source>Screen Layout:</source>
+        <translation>屏幕布局：</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="208"/>
+        <source>Default</source>
+        <translation>默认</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="213"/>
+        <source>Single Screen</source>
+        <translation>单屏</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="218"/>
+        <source>Large Screen</source>
+        <translation>大屏幕</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="223"/>
+        <source>Side by Side</source>
+        <translation>并排</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="233"/>
+        <source>Swap Screens</source>
+        <translation>交换屏幕</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="242"/>
+        <source>Background Color:</source>
+        <translation>背景颜色：</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="264"/>
+        <source>Utility</source>
+        <translation>实用</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="280"/>
+        <source>Use Custom Textures</source>
+        <translation>使用自定义纹理</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="290"/>
+        <source>Dump Textures</source>
+        <translation>转储纹理</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="300"/>
+        <source>Preload Custom Textures</source>
+        <translation>预加载自定义纹理</translation>
     </message>
 </context>
 </TS>
